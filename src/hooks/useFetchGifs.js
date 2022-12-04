@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect} from 'react'
 import { getGifs } from '../helpers/getGifts'
 
 export const useFetchGifs = (category) => {
+  //console.log("dentro del hook useFetchGifs")
   const [images, setImages] = useState([])
   const [isLoading, setIsloading] = useState(true)
 

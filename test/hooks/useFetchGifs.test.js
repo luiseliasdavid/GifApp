@@ -30,7 +30,7 @@ describe('Pruebas en el kook useFetchGifs', () => {
          
         // ya con la respuesta se hacen las comprobaciones
         const { images, isLoading } = result.current;
-        console.log(images)
+        
         expect( images.length ).toBeGreaterThan(0);
         expect( isLoading ).toBeFalsy();
 
